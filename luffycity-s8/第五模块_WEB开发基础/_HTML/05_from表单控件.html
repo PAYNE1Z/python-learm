@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>from表单</title>
+</head>
+<body>
+
+<!-- form 标签属性：
+action: 要提交页面数据到哪去
+method: 请求方法
+-->
+
+<!-- input 标签属性：
+type: 类型：
+    text： 文本
+    password： 密码(在页面输入内容显示圆点)
+    submit： 提交
+    radio: 单选
+    reset: 重置表单用户输入内容
+placeholder:  占位符： 用于在表单中显示提示或说明信息
+-->
+    <form action="http://github.com" method="post">
+
+        <p>
+            <!--label 标签用于对input标签内容进行关联，通过for与input标签中的id进行关联
+                当在页面上点击label内容是光标会自动跳到input输入框中
+             -->
+            <label for="username">帐号:</label>
+            <input type="text" placeholder="请输入用户名" id="username">
+        </p>
+
+        <p>
+            <label for="password">密码:</label>
+            <input type="password" placeholder="请输入密码" id="password">
+        </p>
+
+        <p>
+            <!-- radio : 单选， name : 两个设置一样的name就能达到互斥的效果，实现单选; checked: 默认选中项-->
+            男：<input type="radio" name="sex" checked="checked">
+            女：<input type="radio" name="sex">
+        </p>
+
+
+        <!-- checkbox: 多选-->
+        <h4>
+            爱好：<br>
+            电影 <input type="checkbox" checked="checked">
+            音乐 <input type="checkbox" checked="checked">
+            旅游 <input type="checkbox">
+        </h4>
+
+
+        <!-- select : 下拉列表单选 -->
+        <h4>
+            所属地区：<br>
+            <select>
+                <option value="a">广东</option>
+                <option value="b" selected="selected">湖南</option>
+                <option value="c">江西</option>
+            </select>
+        </h4>
+
+        <!-- select : 下拉列表多选 -->
+        <h4>
+            喜爱的明星：<br>
+            <select multiple="multiple">
+                <option value="a">周星驰</option>
+                <option value="b" selected="selected">周杰伦</option>
+                <option value="c">苍井空</option>
+                <option value="c">小李子</option>
+                <option value="c">法鲨</option>
+                <option value="c">裘德洛</option>
+            </select>
+        </h4>
+
+        <!-- textarea 文本域，用来在文本框中输出多行内容，并且可在页面上随意调整文本框大小
+            cols: 文本框初始宽度 ；  rows: 文本框初始高度
+        -->
+        <h4>
+            个人描述：<br>
+            <textarea name="user_info" id="" cols="30" rows="2"></textarea>
+        </h4>
+
+        <p>
+            <input type="submit" value="注册">
+            <input type="reset" value="重置">
+        </p>
+
+    </form>
+
+</body>
+</html>

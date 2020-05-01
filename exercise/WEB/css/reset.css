@@ -1,0 +1,23 @@
+/*用于清除相关元素默认样式*/
+
+/*去除内边距与外边距*/
+body, p, ul, ol, dl, dt {
+    margin: 0;
+    padding: 0;
+}
+
+/*去除列表样式*/
+ul, ol {
+    list-style: none;
+}
+
+/*去除表单框线*/
+input {
+    border: none;
+    outline: none;
+}
+
+/*去除a标签文字装饰线*/
+a {
+    text-decoration: none;
+}

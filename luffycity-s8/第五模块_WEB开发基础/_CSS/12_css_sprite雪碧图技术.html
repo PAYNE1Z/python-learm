@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Sprite 雪碧图技术制作淘宝列表导航栏</title>
+    <link rel="stylesheet" href="reset.css">
+    <style type="text/css">
+        .taobao_list {
+            float: left;
+            border-top: 1px solid #f4f4f4;
+            border-left: 1px solid #f4f4f4;
+        }
+        .taobao_list ul {
+            width: 292px;
+            overflow: hidden;
+        }
+        .taobao_list ul li {
+            float: left;
+            width: 71px;
+            height: 75px;
+            border: 1px solid #f4f4f4;
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+        .taobao_list ul li a {
+            text-align: center;
+            display: block;
+            font-size: 12px;
+            color: #888;
+        }
+        .taobao_list ul li a span {
+            width: 24px;
+            height: 32px;
+            margin-top: 12px;
+            display: inline-block;
+            background: url("icon.png") no-repeat 0 0;
+            /*background-size 用于控制背景图的大小，
+            可用于缩放图片大小
+            默认值为auto,为图片实际大小*/
+            /*background-size: 24px 595px;*/
+        }
+
+        div ul li a .icon1 {
+            background-position: 0 0;
+        }
+        div ul li a .icon2 {
+           background-position: 0 -44px;
+        }
+        div ul li a .icon3 {
+            background-position: 0 -88px;
+        }
+        div ul li a .icon4 {
+            background-position: 0 -132px;
+        }
+        div ul li a .icon5 {
+            background-position: 0 -176px;
+        }
+        div ul li a .icon6 {
+            background-position: 0 -220px;
+        }
+        div ul li a .icon7 {
+            background-position: 0 -264px;
+        }
+        div ul li a .icon8 {
+            background-position: 0 -308px;
+        }
+        div ul li a .icon9 {
+            background-position: 0 -352px;
+        }
+        div ul li a .icon10 {
+            background-position: 0 -396px;
+        }
+        div ul li a .icon11 {
+            background-position: 0 -440px;
+        }
+        div ul li a .icon12 {
+            background-position: 0 -484px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="taobao_list">
+        <ul>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon1"></span>
+                    <p>充话费</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon2"></span>
+                    <p>车险</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon3"></span>
+                    <p>旅行</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon4"></span>
+                    <p>游戏</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon5"></span>
+                    <p>彩票</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon6"></span>
+                    <p>电影</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon7"></span>
+                    <p>酒店</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon8"></span>
+                    <p>理财</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon9"></span>
+                    <p>找服务</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon10"></span>
+                    <p>演出</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon11"></span>
+                    <p>水电煤</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--图标-->
+                    <span class="icon12"></span>
+                    <p>火车票</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

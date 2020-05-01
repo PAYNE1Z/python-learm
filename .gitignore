@@ -1,0 +1,174 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+.idea/
+172-16-9-30_network.xml
+DgSpider/
+Would skip repository WeChat_auto_robot/
+day5/
+day6/
+day7-class/
+django_/
+easy_gui/
+fistscrapy/
+flask_/
+learning.py
+"luffycity-s8/\347\254\254\344\270\200\346\250\241\345\235\227_\345\274\200\345\217\221\345\237\272\347\241\200/\347\254\2541\347\253\240_Python\345\237\272\347\241\200\350\257\255\346\263\225/\344\275\234\344\270\232_\347\231\273\345\275\225\346\216\245\345\217\243/lock.txt"
+"luffycity-s8/\347\254\254\344\270\200\346\250\241\345\235\227_\345\274\200\345\217\221\345\237\272\347\241\200/\347\254\2542\347\253\240 _\346\225\260\346\215\256\347\261\273\345\236\213_\345\255\227\347\254\246\347\274\226\347\240\201_\346\226\207\344\273\266\346\223\215\344\275\234/\344\275\234\344\270\232_\350\264\255\347\211\251\350\275\246/__pycache__/"
+"luffycity-s8/\347\254\254\344\270\200\346\250\241\345\235\227_\345\274\200\345\217\221\345\237\272\347\241\200/\347\254\2542\347\253\240 _\346\225\260\346\215\256\347\261\273\345\236\213_\345\255\227\347\254\246\347\274\226\347\240\201_\346\226\207\344\273\266\346\223\215\344\275\234/\344\275\234\344\270\232_\350\264\255\347\211\251\350\275\246/balance.json"
+"luffycity-s8/\347\254\254\344\270\200\346\250\241\345\235\227_\345\274\200\345\217\221\345\237\272\347\241\200/\347\254\2542\347\253\240 _\346\225\260\346\215\256\347\261\273\345\236\213_\345\255\227\347\254\246\347\274\226\347\240\201_\346\226\207\344\273\266\346\223\215\344\275\234/\344\275\234\344\270\232_\350\264\255\347\211\251\350\275\246/shop_car.json"
+"luffycity-s8/\347\254\254\344\270\200\346\250\241\345\235\227_\345\274\200\345\217\221\345\237\272\347\241\200/\347\254\2542\347\253\240 _\346\225\260\346\215\256\347\261\273\345\236\213_\345\255\227\347\254\246\347\274\226\347\240\201_\346\226\207\344\273\266\346\223\215\344\275\234/\344\275\234\344\270\232_\350\264\255\347\211\251\350\275\246/shop_log.txt"
+"luffycity-s8/\347\254\254\344\272\214\346\250\241\345\235\227_\345\207\275\346\225\260\347\274\226\347\250\213/\347\254\254\344\272\214\347\253\240_\345\270\270\347\224\250\346\250\241\345\235\227/\344\275\234\344\270\232_ATM\350\264\255\347\211\251\345\225\206\345\237\216/"
+"luffycity-s8/\347\254\254\344\272\214\346\250\241\345\235\227_\345\207\275\346\225\260\347\274\226\347\250\213/\347\254\254\344\272\214\347\253\240_\345\270\270\347\224\250\346\250\241\345\235\227/\347\273\203\344\271\240/tesla/conf/__pycache__/"
+"luffycity-s8/\347\254\254\344\272\214\346\250\241\345\235\227_\345\207\275\346\225\260\347\274\226\347\250\213/\347\254\254\344\272\214\347\253\240_\345\270\270\347\224\250\346\250\241\345\235\227/\347\273\203\344\271\240/tesla/core/__pycache__/"
+"luffycity-s8/\347\254\254\344\272\214\346\250\241\345\235\227_\345\207\275\346\225\260\347\274\226\347\250\213/\347\254\254\344\272\214\347\253\240_\345\270\270\347\224\250\346\250\241\345\235\227/\347\273\203\344\271\240/tesla/logs/"
+my_site/
+nginx_502/
+nginx_clientip_monitor/
+requests_.py
+service_script/
+socket_/
+Would skip repository test-project/javascripts_
+Would skip repository test-project/wechat_jump_game
+Would skip repository test-project/wechat_jump_jump
+test-project/.idea
+test-project/htmlcss
+test-project/lock.txt
+test-project/pig.py
+test-project/s14
+test-project/status.txt
+test-project/test.py
+test-project/test1.py
+test-project/venv
+test/prometheus_exporter.py
+test/test.py
+tutorial/
+wangsong_chat/
+Would skip repository website/TuanDai.CgtCustmerFullPayMysql
+Would skip repository wechat_jump_jump/
+yaml/
+zabbix_api/
+"\346\273\221\345\212\250\350\256\244\350\257\201\347\232\204/"

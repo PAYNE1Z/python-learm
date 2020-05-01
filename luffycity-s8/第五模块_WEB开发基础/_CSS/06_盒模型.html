@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <style type="text/css">
+        .box1 {
+            background-color: green;
+            /*内容宽度*/
+            width: 100px;
+            /*内容高度*/
+            height: 100px;
+            padding: 20px;
+            /*padding 属性综合写法:
+            上 右 下 左
+            padding: 20px 30px 40px 50px;
+            上 左右 下
+            padding: 20px 30px 40px;
+            上下 左右
+            padding: 20px 40px;
+            上下左右
+            padding: 20px; */
+
+            /*边框 三要素 border-width border-color border-style */
+            border: 5px solid red;
+            /*这句的效果等同于以下12条
+            border-top-width: 10px;
+            border-top-color: red;
+            border-top-style: solid;
+
+            border-right-width: 10px;
+            border-right-color: red;
+            border-right-style: solid;
+
+            border-bottom-width: 10px;
+            border-bottom-color: red;
+            border-bottom-style: solid;
+
+            border-left-width: 10px;
+            border-left-color: red;
+            border-left-style:solid;*/
+
+            /*表示四个方向的外边距离为20px*/
+            /*margin: 20px;*/
+            /*表示盒子向下移动了30px*/
+            /*margin-top: 30px;*/
+            /*表示盒子向右移动了50px*/
+            /*margin-left: 50px;*/
+            /*表示盒子向上移动了100px*/
+            margin-bottom: 100px;
+        }
+
+        /*使用border制作小三角*/
+        .triangle {
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid red;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        box1
+    </div>
+
+    <div class="triangle"></div>
+
+
+</body>
+</html>

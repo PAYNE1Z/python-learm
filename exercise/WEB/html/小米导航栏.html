@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米导航栏</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <style type="text/css">
+        /*设置导航栏宽高： 100%将自动适应显示器宽度*/
+        .site-header {
+            width: 100%;
+            height: 100px;
+        }
+
+        /*设置导航栏内容区域大小 margin: 0 auto 是将盒子居中于site-header*/
+        .container {
+            width: 1226px;
+            margin: 0 auto;
+        }
+
+        /*设置导航栏logo盒子区域为float, 并设置到母盒子的内边距,使其垂直居中于container*/
+        .site-header .site-logo {
+            float: left;
+            margin: 22px 0;
+        }
+
+        /*设置导航栏logo图片显示大小*/
+        .site-header .logo{
+            width: 56px;
+        }
+
+        /*设置logo a标签为块元素并设置其大小与logo一致，使其能撑起site-logo区域高度*/
+        .site-logo a {
+            display: block;
+            width: 56px;
+            height: 56px;
+        }
+
+        /*设置导航栏菜单列表大小*/
+        .site-header .site-list {
+            float: left;
+            width: 820px;
+            height: 88px;
+            padding: 12px 0 0 30px;
+        }
+
+        /*设置菜单列表字体大小*/
+        .site-list li {
+            float: left;
+            font-size: 16px;
+        }
+
+        /*设置列表中a标签的文字颜色*/
+        .site-list li a {
+            display: block;
+            color: #333;
+            padding: 28px 10px 38px;
+        }
+
+        /*清除container浮动*/
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        /*设置搜索框大小*/
+        .site-search {
+            float: right;
+            width: 296px;
+            margin-top: 25px;
+        }
+        .site-search form {
+            height: 50px;
+            width: 296px;
+        }
+        .site-search form input.content {
+            width: 223px;
+            height: 48px;
+            border: 1px solid #e0e0e0;
+            padding: 0 10px;
+            float: left;
+        }
+        .site-search form input.search {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #e0e0e0;
+            float: left;
+            margin-left: -1px;
+        }
+
+        /*设置搜索框输入内容时的样式*/
+        .site-search form input:hover {
+            border-color: orange;
+        }
+        .site-search form input.search:hover {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--导航栏盒子-->
+    <div class="site-header">
+
+        <!--导航栏内容盒子-->
+        <div class="container clearfix">
+
+            <!-- 导航栏logo盒子-->
+            <div class="site-logo">
+                <a href="#">
+                    <img class="logo" src="mi.jpg" alt="小米官网" title="小米官网">
+                </a>
+            </div>
+
+            <!-- 导航栏菜单列表 -->
+            <ul class="site-list">
+                <li>
+                    <a href="#">全部商品分类</a>
+                </li>
+                <li>
+                    <a href="#">小米</a>
+                </li>
+                <li>
+                    <a href="#">红米</a>
+                </li>
+                <li>
+                    <a href="#">电视</a>
+                </li>
+                <li>
+                    <a href="#">笔记本</a>
+                </li>
+                <li>
+                    <a href="#">家电</a>
+                </li>
+                <li>
+                    <a href="#">路由器</a>
+                </li>
+                <li>
+                    <a href="#">智能硬件</a>
+                </li>
+                 <li>
+                    <a href="#">服务</a>
+                </li>
+                 <li>
+                    <a href="#">社区</a>
+                </li>
+            </ul>
+
+            <!-- 导航栏搜索框form表单-->
+            <div class="site-search">
+                <form>
+                    <input type="text" name="" class="content">
+                    <input type="submit" name="" value="搜索" class="search">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内元素水平垂直居中方法</title>
+    <style type="text/css">
+        .box1 {
+            width: 500px;
+            height: 200px;
+            background-color: deepskyblue;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 20px;
+        }
+        .box2 {
+            width: 500px;
+            height: 200px;
+            background-color: lightseagreen;
+            text-align: center;
+            /*display: table-cell;  将元素设置为table-cell单元格格式*/
+            display: table-cell;
+            /*vertical-align: 三个值
+            top: 靠上方
+            middle: 居中
+            bottom: 靠下方;*/
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        方法一：text-align: center; line-height: 盒子高度;
+    </div>
+
+    <div class="box2">
+        方法二：text-align: center; display: table-cell; vertical-align: middle;
+    </div>
+</body>
+</html>

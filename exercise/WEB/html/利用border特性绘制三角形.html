@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用border制作三角形</title>
+    <style type="text/css">
+        /*首先，从对border的应用开始，以前一直以为边框是矩形的 */
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            border-color: #0072E3 #00ff00 #ff0000 #8b008b;
+        }
+        /*当我们增大border值时： 可以清楚的看到border的每一条边其它都是梯形的，*/
+        .box2 {
+            width: 100px;
+            height: 100px;
+            border: 20px solid;
+            border-color: #0072E3 #00ff00 #ff0000 #8b008b;
+        }
+
+        /* 当我们把元素的长和宽都设置为 0px，边框的值不变
+          我们用极限的原理解释，每一边的边框将会由梯形变成三角形，来试验一下：
+        */
+        .box3 {
+            width: 0;
+            height: 0;
+            border: 50px solid;
+            border-color: #0072E3 #00ff00 #ff0000 #8b008b;
+        }
+
+        /*那么现在我们对如何绘制三角形就有一个思路：把其他三边的边框的border-color值设为transparent，即可得到一个三角形*/
+        /*上三角 保留下边框颜色*/
+        .up {
+            width: 0;
+            height: 0;
+            border: 50px solid;
+            border-color: transparent transparent green transparent;
+        }
+
+        /*下三角 保留上边框颜色*/
+        .down {
+            width: 0;
+            height: 0;
+            border: 50px solid;
+            border-color: red transparent transparent transparent;
+        }
+
+        /*左三角 保留右边框颜色*/
+        .left {
+            width: 0;
+            height: 0;
+            border: 50px solid;
+            border-color: transparent blue transparent transparent;
+        }
+
+        /*右三角 保留左边框颜色*/
+        .right {
+            width: 0;
+            height: 0;
+            border: 50px solid;
+            border-color: transparent transparent transparent yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">当边框很细时，看起来边框像是矩形的</div>
+    <br>
+    <div class="box2">加粗边框可以看到边框其实是梯形的</div>
+    <br>
+    <span>当内容高度与宽度设为0，四条边框将呈现出三角形</span>
+    <div class="box3"></div>
+    <br>
+    <span>当把除了下边框外的其它三个边框都设为透明，就能呈现出一个向上的三角形</span>
+    <div class="up"></div>
+    <br>
+    <span>当把除了左边框外的其它三个边框都设为透明，就能呈现出一个向右的三角形</span>
+    <div class="right"></div>
+    <br>
+    <span>当把除了右边框外的其它三个边框都设为透明，就能呈现出一个向左的三角形</span>
+    <div class="left"></div>
+    <br>
+    <span>当把除了上边框外的其它三个边框都设为透明，就能呈现出一个向下的三角形</span>
+    <div class="down"></div>
+
+</body>
+</html>

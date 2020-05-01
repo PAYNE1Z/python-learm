@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table标签制作表格</title>
+</head>
+<body>
+
+    <!--css修饰：border: 给表格加上边框线，注意：是每个单元格分区加的，而每个单元格是有间距的，所以出来的效果是双框线-->
+    <!--css修饰：cellspacing: 单元格间距，把间距设为0就是单线框了-->
+    <table border="1" cellspacing="0">
+
+        <!--caption: 标题标签,会基于正文内容的宽度居中显示-->
+        <caption>商品清单1</caption>
+
+        <!--tr : table row 表行-->
+        <!-- 第一行内容：表头-->
+        <tr>
+            <!--th : table head 表头-->
+            <th>产品名称</th>
+            <th>品牌</th>
+            <th>数量</th>
+            <th>价格</th>
+        </tr>
+
+        <!-- 第二行内容：表数据-->
+        <tr>
+            <!--td: table data 表数据-->
+            <td>手机</td>
+            <td>华为</td>
+            <td>1</td>
+            <td>1999</td>
+        </tr>
+
+        <!-- 第三行内容：表数据-->
+        <tr>
+            <td>电脑</td>
+            <td>华为</td>
+            <td>1</td>
+            <td>4499</td>
+        </tr>
+
+        <!-- 第四行内容：表数据-->
+        <tr>
+            <td>电视</td>
+            <td>荣耀</td>
+            <td>1</td>
+            <td>3799</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellspacing="0">
+
+        <caption>商品清单2</caption>
+
+        <!--tr : table row 表行-->
+        <!-- 第一行内容：表头-->
+        <tr>
+            <!--th : table head 表头-->
+            <th>产品名称</th>
+            <th>品牌</th>
+            <!--colspan:
+                列合并：2是代表要往后合并的总列数：此例中是将表中的第一行中的第三列与第四合并显示为一个列
+                合并后要把第一行的第四例去掉，不然会显示错乱
+            -->
+            <th colspan="2">数量与单价</th>
+            <!--<th>单价</th> 与第三行合并了，这里去掉-->
+        </tr>
+
+        <!-- 第二行内容：表数据-->
+        <tr>
+            <!--td: table data 表数据-->
+            <td>手机</td>
+            <!--rowspan:
+                行合并：2是代表要往后合并的总行数：此例中是将表中的第二列中的第二行与第三行合并显示
+                合并后要把第二列中的第三行数据去掉，不然会显示错乱
+            -->
+            <td rowspan="2">华为</td>
+            <td>1</td>
+            <td>1999</td>
+        </tr>
+
+        <!-- 第三行内容：表数据-->
+        <tr>
+            <td>电脑</td>
+            <!--<td>华为</td>  与第二行合并了，这里去掉-->
+            <td>1</td>
+            <td>4499</td>
+        </tr>
+
+        <!-- 第四行内容：表数据-->
+        <tr>
+            <td>电视</td>
+            <td>荣耀</td>
+            <td>1</td>
+            <td>3799</td>
+        </tr>
+    </table>
+</body>
+</html>

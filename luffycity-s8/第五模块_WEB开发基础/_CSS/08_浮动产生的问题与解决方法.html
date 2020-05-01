@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style type="text/css">
+        .father {
+            /*方法1、设置父盒子高度*/
+            /*height: 100px;*/
+            border: 2px solid red;
+
+            /*方法4、BFC区域 overflow: hidden
+            计算BFC高度时，浮动元素也参与计算
+            形成BFC的条件：除了 overflow: visitable的属性值*/
+            /*overflow: hidden;*/
+        }
+        .c1 {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: green;
+        }
+        .c2 {
+            width: 100px;
+            height: 100px;
+            float: right;
+            background-color: yellow;
+        }
+
+        /*方法2、在浮动元素后面增加一个空盒子并设置 clear: both属性*/
+        .clear {
+            clear: both;
+        }
+
+        /*方法3、伪元素清除*/
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father clearfix">
+        <div class="c1">c1</div>
+        <div class="c2">c2</div>
+<!--        <div class="clear"></div>-->
+    </div>
+    <p>
+        解决因为子盒子浮动而造成不能撑起父盒子高度的问题：
+        1、给父盒子设置height高度
+        2、内墙法：在浮动元素后面新增一个空盒子并设置 clear: both属性
+    </p>
+</body>
+</html>

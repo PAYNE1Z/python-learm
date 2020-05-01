@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baidu Register</title>
+</head>
+<body>
+
+<!--不强制要求跟百度注册页面一样，最基本的结构要搭建出来，样式丑点不要紧-->
+
+    <div style="width: 370px; height: 60px">
+        <form action="https://www.baidu.com" method="post">
+            <p>
+                <label for="username">用户名</label>
+                <input type="text" id="username" placeholder="请设置用户名" size="40">
+            </p>
+
+            <p>
+                <label for="phone">手机号</label>
+                <input type="text" id="phone" placeholder="可用于登录和找回密码" size="40">
+            </p>
+
+            <p>
+                <label for="password">&nbsp;&nbsp;&nbsp;密码</label>
+                <input type="password" id="password" placeholder="请设置登录密码" size="40">
+            </p>
+
+            <p>
+                <label for="auth_code">验证码</label>
+                <input type="text" id="auth_code" placeholder="请输入验证码" size="24" >
+                <input type="button" value="获取短信验证码">
+            </p>
+
+            <h6 align="right">
+                <input type="checkbox">
+                <label for="is_agree">阅读并授受</label>
+                <a href="http://passport.baidu.com/static/passpc-account/html/protocal.html">&laquo;百度用户协议&raquo;</a>
+                及
+                <a href="http://privacy.baidu.com/mdetail?id=288">&laquo;百度隐私权保护声明&raquo;</a>
+            </h6>
+
+            <p align="right">
+                <input type="button" value="注册"
+                       style="width:315px; height:50px; border:0px; background-color:#0072E3; color:#FFFFFF"
+                >
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

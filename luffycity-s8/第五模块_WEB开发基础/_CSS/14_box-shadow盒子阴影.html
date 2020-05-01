@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box-shadow 盒子阴影</title>
+    <style type="text/css">
+        .shadow {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: 50px;
+            background-color: #333333;
+            border-radius: 50%;
+            /*box-shadow:
+            第一个值 水平方向阴影大小（正数往右，负数往左）
+            第二个值 垂直方向阴影大小（正数往下，负数往上）
+            第三个值 阴影的模糊程度（值越大越模糊）
+            第四个值 阴影的颜色
+            第五个值 阴影显示方式（向内或向外）默认为向外*/
+            box-shadow: 5px 5px 5px #757575;
+        }
+
+        /*鼠标悬浮效果*/
+        .shadow:hover {
+            top: -2px;
+            box-shadow: 5px 5px 5px greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow"></div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+    <link rel="stylesheet"
+          type='text/css'
+          href="reset.css"
+    >
+    <style type="text/css">
+        .header {
+            /*background-color: green;*/
+            width: 100%;
+            height: 100px;
+        }
+        .header .box {
+            /*background-color: red;*/
+            width: 1226px;
+            /*height: 100px;*/
+            margin: 0 auto;
+        }
+        .header .nav-logo {
+            float: left;
+            margin-top: 25px;
+        }
+        .header .nav-logo a {
+            display: block;
+            width: 56px;
+            height: 56px;
+        }
+        .nav-logo img {
+            width: 56px;
+            height: 56px;
+        }
+        .header .nav-list {
+            float: left;
+            width: 820px;
+            height: 88px;
+            padding: 12px 0 0 30px;
+        }
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .nav-list li {
+            float: left;
+            font-size: 16px;
+        }
+
+        .nav-list li a {
+            display: block;
+            color: #333;
+            padding: 28px 10px 38px;
+        }
+
+        .nav-search {
+            position: relative;
+            float: right;
+            width: 296px;
+            margin-top: 25px;
+        }
+
+        .search_hot_word {
+            position: absolute;
+            top: 18px;
+            right: 70px;
+            font-size: 14px;
+        }
+        .search_hot_word span {
+            background-color: #eee;
+            padding: 0 5px;
+            color: #757575;
+        }
+        .search_hot_word span:hover {
+            cursor: pointer;
+            background-color: #ff6700;
+            color: #fff;
+        }
+        .nav-search form {
+            height: 50px;
+            width: 296px;
+        }
+        .nav-search form input.content {
+            width: 223px;
+            height: 48px;
+            border: 1px solid #e0e0e0;
+            padding: 0 10px;
+            float: left;
+        }
+
+        .nav-search form input.search {
+            width: 49px;
+            height: 50px;
+            border: 1px solid #e0e0e0;
+            float: left;
+            margin-left: -1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="box clearfix">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="mi.jpg" alt="">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">全部商品分类</a></li>
+                <li><a href="#">小米手机</a></li>
+                <li><a href="#">Redmi 红米</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">家电</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">智能硬件</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+            <div class="nav-search">
+                <form>
+                    <input type="text" name="" class="content">
+                    <input type="submit" name="" value="搜索" class="search">
+                    <div class="search_hot_word">
+                        <span>小米9 Pro 5G</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

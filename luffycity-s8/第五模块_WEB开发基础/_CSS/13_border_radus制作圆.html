@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-radius边框属性 制作圆</title>
+    <style type="text/css">
+        .roundness {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*设置圆弧为宽高的一半则是正圆*/
+            /*border-radius: 100px;*/
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .ellipse {
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: green;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .torus {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            border: 50px solid blue;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .half_roundness {
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: purple;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="roundness">正圆形</div>
+    <div class="ellipse">椭圆形</div>
+    <div class="torus">圆环</div>
+    <div class="half_roundness">半圆</div>
+</body>
+</html>

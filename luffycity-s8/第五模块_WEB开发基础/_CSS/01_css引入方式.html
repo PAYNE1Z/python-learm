@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css引入方式</title>
+
+    <!-- 1、外部式 -->
+    <link rel="stylesheet" href=".css/style.css" type="text/css">
+
+    <!-- 2、内嵌式 -->
+    <style type="text/css">
+        h1 {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>This is H1</h1>
+
+    <!-- 3、内联(行内)式 -->
+    <span style="color: blue">hello world</span>
+</body>
+</html>
+
+
+<!-- 引入方式的优先级：
+    内联式 < 嵌入式/外部式  < 外部式/嵌入式
+    注： 嵌入式与外部式 谁最在后面执行就会覆盖前面的
+ -->
